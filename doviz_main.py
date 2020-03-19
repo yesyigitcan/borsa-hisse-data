@@ -1,8 +1,7 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul 26 11:08:48 2019
-
-@author: st900373
 """
 
 import pandas as pd
@@ -11,7 +10,7 @@ import numpy as np
 
 #////////////////// Data Set First Combine with Dollar ///////////////////#
 
-dataset = pd.read_excel('D:\\Users\\st900373\\Desktop\\doviz.xls')
+dataset = pd.read_excel('DIRECTORY\\doviz.xls')
 vkf = dataset[dataset["name"] == "VAKBN"]
 dollars = dataset[dataset["name"] == "SUSD"]
 
@@ -24,7 +23,11 @@ dataset = dataset.dropna()
 dataset.head()
 
 
+
 #//////////// Data Set Last n Value Average and Increase Average /////////////////#
+
+# Son 7 günün ortalamasını alıp yeni sütunlar halinde dolduruyor.
+# Creating and filling new columns by calculating average of last 7 days.
 
 vkf_array = dataset.values.tolist()
 vkf_len = len(vkf_array)
@@ -67,4 +70,4 @@ dataset.columns
 
 
 #//////////// Writing Data Set into Excel /////////////////#
-dataset.to_excel("D:\\Users\\st900373\\Desktop\\doviz_featured2.xls")
+dataset.to_excel("TARGET DIRECTORY")
