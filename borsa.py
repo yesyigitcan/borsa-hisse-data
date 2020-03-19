@@ -10,10 +10,8 @@ import pandas as pd
 
 doviz = pd.DataFrame(columns=["date","name","open","close","high","low","volume","isCurrency"])
 
-baslangic = "20120710"
-bitis = "20190728"
 
-##### DOLAR için #####
+
 
 time_ = []
 close_ = []
