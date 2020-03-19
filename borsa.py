@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul 24 13:44:12 2019
-
-@author: st900373
 """
 
 import datetime
@@ -26,8 +24,10 @@ target_ = []
 change_ = []
 
 
-#♣baslangic = "20170723"
-#bitis = "20190723"
+baslangic = "20170723"
+bitis = "20190723"
+
+####### Döviz için ########
 
 names = ["SUSD","SEUR","SGBP","SCHF"]
 
@@ -75,7 +75,7 @@ for i in names:
 
 
 
-####### ADEL için ########
+####### Hisse için ########
 print("- Part II -")
 
 
@@ -124,4 +124,4 @@ for i in names:
     print(" ",i," is collected")
 
 
-doviz.to_excel("D:\\Users\\st900373\\Desktop\\doviz.xls")
+doviz.to_excel("PATH")
